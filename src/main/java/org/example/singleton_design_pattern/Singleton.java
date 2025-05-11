@@ -18,4 +18,9 @@ public class Singleton {
 
         return obj;
     }
+
+    // any function we want to access through Singleton class object
+    public void performTask() {
+        System.out.println("Singleton class object is executing me - I am inside Singleton class!");
+    }
 }
