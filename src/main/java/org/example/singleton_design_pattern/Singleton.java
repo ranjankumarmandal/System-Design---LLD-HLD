@@ -23,4 +23,9 @@ public class Singleton {
     public void performTask() {
         System.out.println("Singleton class object is executing me - I am inside Singleton class!");
     }
+
+    // special case: working with multithreading
+       // private static volatile object
+       // private constructor
+       // public static getInstance method: should have synchronized(mutex) wrapped for new object creation
 }
