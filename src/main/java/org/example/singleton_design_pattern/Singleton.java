@@ -7,9 +7,7 @@ public class Singleton {
 
     private static Singleton obj;
 
-    private Singleton() {
-
-    }
+    private Singleton() {}
 
     public static Singleton getInstance() {
         if(obj == null) {
