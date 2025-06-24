@@ -17,8 +17,12 @@ public class Subject {
     }
 
     public void notifyObservers(String message) {
-        for(Observer o : observers) {
-            o.update(message);
+        boolean notifyEventReceived = true; // notify event has been received then only notify observers
+
+        if(notifyEventReceived) {
+            for (Observer o : observers) {
+                o.update(message);
+            }
         }
     }
 }
