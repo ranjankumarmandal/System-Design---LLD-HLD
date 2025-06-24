@@ -16,8 +16,8 @@ public class MainFlow {
         Observer u2 = new User("Bob");
 
         Subject subject = new Subject();
-        subject.attach(u1);
-        subject.attach(u2);
+        subject.add(u1);
+        subject.add(u2);
 
         subject.notifyObservers("New video uploaded!");
     }

@@ -5,22 +5,25 @@ import org.example.observer_design_pattern.osbserver.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subject {
-    private List<Observer> observers = new ArrayList<>();
+public class Subject implements Observable {
+    List<Observer> observers = new ArrayList<>();
 
-    public void attach(Observer o) {
+    @Override
+    public void add(Observer o) {
         observers.add(o);
     }
 
-    public void detach(Observer o) {
+    @Override
+    public void remove(Observer o) {
         observers.remove(o);
     }
 
+    @Override
     public void notifyObservers(String message) {
-        boolean notifyEventReceived = true; // notify event has been received then only notify observers
+        boolean notifyEventReceived = true;
 
         if(notifyEventReceived) {
-            for (Observer o : observers) {
+            for(Observer o : observers) {
                 o.update(message);
             }
         }
