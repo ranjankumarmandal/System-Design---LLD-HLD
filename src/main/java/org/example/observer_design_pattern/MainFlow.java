@@ -1,5 +1,9 @@
 package org.example.observer_design_pattern;
 
+import org.example.observer_design_pattern.osbserver.Observer;
+import org.example.observer_design_pattern.observable.Subject;
+import org.example.observer_design_pattern.osbserver.User;
+
 public class MainFlow {
     public static void main(String[] args) {
         // Observer Design pattern:

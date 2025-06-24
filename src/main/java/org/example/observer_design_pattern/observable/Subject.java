@@ -1,4 +1,6 @@
-package org.example.observer_design_pattern;
+package org.example.observer_design_pattern.observable;
+
+import org.example.observer_design_pattern.osbserver.Observer;
 
 import java.util.ArrayList;
 import java.util.List;

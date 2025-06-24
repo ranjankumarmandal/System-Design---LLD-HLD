@@ -1,4 +1,4 @@
-package org.example.observer_design_pattern;
+package org.example.observer_design_pattern.osbserver;
 
 public class User implements Observer {
     private String name;
